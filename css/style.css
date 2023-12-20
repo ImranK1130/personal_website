@@ -14,8 +14,10 @@
     --fw-bold: 900;
     
     --clr-light: #fff;
-    --clr-dark: #303030;
+    --clr-dark: #0D0201;
     --clr-accent: #16e0bd;
+    --clr-back: #101111 ;
+    --clr-red: #BFFCC1;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
@@ -43,7 +45,7 @@ html {
 }
 
 body {
-    background: var(--clr-light);
+    background: var(--clr-red);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
@@ -145,12 +147,15 @@ header {
 
 .logo {
     max-width: 200px;
+    position: absolute;
+    left: -1em;
+    top: -2em;
 }
 
 .nav {
     position: fixed;
     background: var(--clr-dark);
-    color: var(--clr-light);
+    color: var(--clr-red);
     top: 0;
     bottom: 0;
     left: 0;
@@ -254,6 +259,7 @@ header {
 /*  Intro section  */
 
 .intro {
+    
     position: relative;
 }
 
@@ -313,7 +319,7 @@ header {
         grid-row: 2;
         text-align: right;
         position: relative;
-        left: -3em;
+        left: 0em;
         width: calc(100% + 5.5em);
     }
 }
@@ -355,17 +361,58 @@ header {
     margin: 0 auto;
 }
 
+.skill1__img {
+    grid-area: img;
+    min-width: 100px;
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}    
+    
+.skill2__img {
+    grid-area: img;
+    min-width: 100px;
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}    
+    
+.skill3__img {
+    grid-area: img;
+    min-width: 100px;
+    width: 10%;
+    height: 100px;
+    position: absolute;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 2;
+}    
+
 @media (min-width: 800px) {
     .skills {
-        display: flex;
+        /* display: flex; */
         max-width: 1000px;
         margin-left: auto;
         margin-right: auto;
+        
+        
     }
     
-    .skill + .skill {
+    
+    
+    
+    /* .skill + .skill {
         margin-left: 2em;
-    }
+    } */
 }
 
 
@@ -407,12 +454,7 @@ header {
     
     .about-me__img {
         grid-area: img;
-        /* width: 200%; */
-        transform: scaleX(2.0);
-        height: 100%;
-        left: 3.5em;
         position: relative;
-        
         z-index: 2;
     }
 }
