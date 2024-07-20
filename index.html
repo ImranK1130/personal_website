@@ -1,22 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <head>
         <meta charset="UTF-8">
-        <meta name="viewpoint" content="width=device-width, initial-scale = 1.0">
-        <title>Imran Portfolio Website</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imran Khan Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
         <link rel="stylesheet" href="css/style.css">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-        
-        <!-- Update these with your own fonts -->
-        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-
     </head>
     <body>
         <header>
             <div class="logo">
-                <img src="img/logo-02.png" alt=""> <!--add in the logo-->
+                <img src="img/logo-02.png" alt="Imran Khan Logo">
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -24,112 +20,113 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">My Skills</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">My Projects</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </nav>
         </header>
 
-
-    <!-- Introduction -->
+        <!-- Introduction -->
         <section class="intro" id="home">
             <h1 class="section__title section__title--intro">
-                Hi, <br> I am <strong>Imran Khan</strong>
+                Hi, I am <strong>Imran Khan</strong>
             </h1>
-            <p class="section__subtitle section__subtitle--intro"> ////////////////////// Software Developer & Cybersecurity Aspirant</p>
-            <img src="img/imran-01.JPG" alt="a picture of imran smiling" class="intro__img">
+            <p class="section__subtitle section__subtitle--intro">Software Developer & Cybersecurity Aspirant</p>
+            <img src="img/imran-01.JPG" alt="A picture of Imran smiling" class="intro__img">
         </section>
-        
-        
-    <!--skills-->   <!--add in the skills that i know-->
-        <section class="my-skills" id = "skills">
-            <h2 class="section__title section__title--skills">What I am proficient in</h2>
+
+        <!-- Skills -->
+        <section class="my-skills" id="skills">
+            <h2 class="section__title section__title--skills">My Skills</h2>
             <div class="skills">
                 <div class="skill">
-                    <!-- <h3>Programming</h3> -->
-                    <img src="img/c++-logo.png" alt="C++" class="skill1__img" >
-                    <p>Proficient in C++ with experience in file management, data reading, and data structures. Developed several programs including a CSV file reader with search and sort functionality, a program to process and analyze large data sets using algorithms such as quick sort and merge sort, and an array-based data sorting program using various algorithms. Experimented with different data structures and algorithms to find efficient solutions.</p>
-                </div> <!--skill 1-->
-
-            
+                    <img src="img/c++-logo.png" alt="C++" class="skill1__img">
+                    <p>Proficient in C++ with experience in file management, data reading, and data structures. Developed several programs including a CSV file reader with search and sort functionality, and an array-based data sorting program using various algorithms.</p>
+                </div>
                 <div class="skill">
                     <img src="img/C-logo.png" alt="C" class="skill2__img">
-                    <p>Proficient in C with experience in file management, data reading, and data structures. Developed several interactive programs including a program to parse and process data from XML files, a program to implement a stack using an array, and an interactive text-based game. Utilized Linux commands in the development and testing of these programs. Experienced in experimenting with different data structures and algorithms to find efficient solutions.</p>
-                </div> <!--skill 2-->
-
-            
+                    <p>Proficient in C with experience in file management, data reading, and data structures. Developed interactive programs including a program to parse and process data from XML files, and a stack implementation using arrays.</p>
+                </div>
                 <div class="skill">
-                    <img src="img/python-logo.png" alt="python" class="skill3__img">
-                    <p>Proficient in Python with experience in data analysis and machine learning. Developed several programs including an interactive text-based game, a program to read and process data from CSV files, and a machine learning model to classify text documents. Utilized Python's extensive library of modules for various tasks such as data manipulation and visualization. Experienced in experimenting with different libraries and frameworks to find efficient solutions.</p>
-                </div> <!--skill 3-->
+                    <img src="img/python-logo.png" alt="Python" class="skill3__img">
+                    <p>Proficient in Python with experience in data analysis and machine learning. Developed programs including an interactive text-based game, and a machine learning model to classify text documents.</p>
+                </div>
             </div>
-
-            <a href="#projects" class="btn">projects</a><!-- button to use later-->
+            <a href="#projects" class="btn">View Projects</a>
         </section>
-        
-        
-    <!--about me-->
-        <section class="about-me" id = "about">
-            <h2 class="section__title section__title--about">Who i am</h2>
-            <p class="section__subtitle section__subtitle--about">Aspiring Cybersecurity & Software Engineering Professional</p><!--write about who i am-->
 
+        <!-- About Me -->
+
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Aspiring Cybersecurity & Software Engineering Professional</p>
             <div class="about-me__body">
-                <p>Hello! I'm Imran Khan, a dedicated and ambitious Computer Science student at the University of Illinois at Chicago, with a strong academic record and a deep passion for technology. My journey in the tech world is driven by a dual interest in software engineering and cybersecurity. With a solid foundation in programming languages like C++, Python, Java, and others, I have honed my skills through rigorous coursework and hands-on projects. My experiences range from developing a file compression program in C++ to creating a multiplayer 3 Card Poker game in Java, showcasing my ability to apply theoretical knowledge to practical solutions.</p><!--write about who i am-->
+                <p>Hello! I'm Imran Khan, a Computer Science student at the University of Illinois at Chicago, graduating in December 2024 with a GPA of 3.95/4.0. I am passionate about technology, particularly software engineering and cybersecurity.</p>
                 
-                <p>I have interned at esteemed organizations like Boosted Biz and 66Degrees, where I played pivotal roles in backend engineering, AI chatbot development, and optimizing cloud service APIs. These experiences have not only sharpened my technical skills but also given me valuable insights into the fast-paced world of software development.</p><!--write about who i am-->
+                <p>As an Associate Cybersecurity Vulnerability Intern at <strong>Blue Cross and Blue Shield of Illinois/Health Care Service Corporation (HCSC)</strong>, I conducted vulnerability assessments using <strong>DAST</strong>, <strong>SAST</strong>, <strong>MAST</strong>, and <strong>SCA</strong> tools, mitigating over 50 security gaps and reducing incidents by 20%. I also automated security tasks, cutting response times by 30%.</p>
                 
-                <p>My commitment to continuous learning is evidenced by my Google Certified Cloud Digital Leader certification and my active involvement in updating and teaching programming curricula at UIC. As I look forward to a career post-graduation, I am eager to delve deeper into the realms of cybersecurity and software engineering. My goal is to leverage my skills in developing secure, efficient, and impactful technological solutions, contributing positively to the industry and society at large.</p><!--write about who i am-->
+                <p>At <strong>Millennium IT Solutions</strong>, I engaged in cybersecurity projects with <strong>AWS</strong> and <strong>Azure</strong>, reducing security breaches by 25% and enhancing efficiency by 40% through automation.</p>
                 
+                <p>My technical skills include <strong>C++</strong>, <strong>Python</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and cybersecurity tools like <strong>Checkmarx</strong>, <strong>GHAS</strong>, <strong>Tanium</strong>, <strong>Traceable</strong>, and <strong>Snyk</strong>. I hold certifications including <strong>Google Certified Cloud Digital Leader</strong>, <strong>AWS Certified Cloud Practitioner</strong>, <strong>Google Cybersecurity Professional Certificate</strong>, and <strong>Security+</strong>.</p>
+                
+                <p>My goal is to leverage my skills in developing secure, efficient, and impactful technological solutions, contributing positively to the industry and society.</p>
             </div>
-
-           
-            
-            <img src="img/imran-02.PNG" alt="a picture of imran smiling" class="about-me__img">
-            
-            <a href="resume/Imran_Khan_Resume.pdf" download class="btn">My Resume {pdf}</a>
-
+            <img src="img/imran-02.PNG" alt="A picture of Imran smiling" class="about-me__img">
+            <a href="resume/Imran_Khan_Resume.pdf" download class="btn">Download Resume (PDF)</a>
         </section>
-        
-    <!--projects-->
-       
+
+
+        <!-- Projects -->
         <section class="work" id="projects">
             <h2 class="section-title section__title--projects">My Work</h2>
             <p class="section-subtitle">A selection of my projects</p>
             <div class="projects">
                 <div class="project">
-                    <h3>ClimaSphere: Dynamic Weather Companion | React.js, CSS, API Integration, Docker</h3>
-                    <p>In the ClimaSphere application, I utilized maps for organized data storage, binary trees, and priority queues for optimized searching and sorting, and the Huffman algorithm for secure file encryption and decoding. These advanced techniques demonstrate my proficiency in software engineering, emphasizing efficient data management and security in delivering a high-performance, user-focused application.</p>
-                    <a href="project-1.html" class="btn">View project 1</a>
+                    <h3>ClimaSphere: Dynamic Weather Companion | React.js, API Integration, Docker</h3>
+                    <p>Developed a robust and user-friendly web application delivering real-time weather updates. Utilized React.js, Node.js, and integrated Rapid API and OpenWeatherMap for current weather information, resulting in a 75% increase in user engagement.</p>
+                    <a href="project-1.html" class="btn">View Project</a>
                 </div>
-                
                 <div class="project">
-                    <h3>File Compression | C++</h3>
-                    <p>In this project, maps were used for storing data, and binary trees and priority queues were implemented for searching, sorting, and prioritizing tasks. The Huffman algorithm was also utilized to encrypt and decode files. These tools and techniques are important for a software engineer to be familiar with, as they allow for efficient storage, manipulation, and protection of data.</p>
-                    <a href="project-2.html" class="btn">View project 2</a>
+                    <h3>File Encryption | C++</h3>
+                    <p>Implemented a file compression program using the Huffman algorithm to compress and decompress files efficiently. Developed key functions for building frequency maps, encoding trees, and encoding/decoding maps.</p>
+                    <a href="project-2.html" class="btn">View Project</a>
                 </div>
-                
                 <div class="project">
                     <h3>March Madness Analysis | C++</h3>
-                    <p>In this project, data was analyzed to determine the tournament winner and their rankings. Data structures were used to store data by reading and importing files, and classes were utilized to organize and keep data stored in specific regions. These skills are important for a software engineer to have, as they allow for efficient manipulation and analysis of data, as well as effective organization and management of code.</p>
-                    <a href="project-3.html" class="btn">View project 3</a>
+                    <p>Analyzed tournament data to determine rankings and outcomes. Utilized data structures to store, manipulate, and analyze data, providing insights into game statistics and team performances.</p>
+                    <a href="project-3.html" class="btn">View Project</a>
                 </div>
             </div>
         </section>
 
-        <!-- Footer -->
-        <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:ikhan001130@gmail.com" class="footer__link">ikhan001130@gmail.com</a>
+        <!-- Certifications -->
+        <section class="certifications" id="certifications">
+            <h2 class="section__title section__title--certifications">Certifications</h2>
+            <ul class="certifications__list">
+                <li>Google Certified Cloud Digital Leader - August 2023</li>
+                <li>AWS Certified Cloud Practitioner - January 2024</li>
+                <li>Google Cybersecurity Professional Certificate - February 2024</li>
+                <li>Security+ - August 2024</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2 class="section__title section__title--contact">Contact Me</h2>
+            <p class="section__subtitle section__subtitle--contact">Let's get in touch</p>
+            <a href="mailto:ikhan001130@gmail.com" class="btn">Email Me</a>
             <ul class="social-list">
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.instagram.com/imran._._.khan/">
-                        <i class="fa fa-instagram"></i>
+                        <i class="fab fa-instagram"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
                     <a class="social-list__link" href="https://www.linkedin.com/in/imran-khan23/">
-                        <i class="fa fa-linkedin"></i>
+                        <i class="fab fa-linkedin"></i>
                     </a>
                 </li>
                 <li class="social-list__item">
@@ -138,16 +135,13 @@
                     </a>
                 </li>
             </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Imran Khan. All rights reserved.</p>
         </footer>
         
-        
         <script src="js/index.js"></script>
-            
-       
-        
-        
-        
-        
-        
     </body>
 </html>
