@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Container Security Suite | Imran Khan</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="../img/logo-02.png" alt="Imran Khan Logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="../index.html#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="../index.html#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="../index.html#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="../index.html#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="../index.html#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="../index.html#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="project-details">
+            <div class="project-intro">
+                <img src="../img/container-security.png" alt="Container Security" class="project-icon">
+                <h1 class="section__title project-title">Container Security Suite</h1>
+                <div class="project-tags">
+                    <span class="tag">Kubernetes</span>
+                    <span class="tag">Docker</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">Security</span>
+                </div>
+            </div>
+
+            <div class="project-content">
+                <section class="project-section">
+                    <h2>Project Overview</h2>
+                    <p>The Container Security Suite is a set of tools and scripts designed to automate container image scanning, secrets detection, and runtime monitoring for Kubernetes clusters. It helps organizations secure their containerized workloads and maintain compliance.</p>
+                </section>
+
+                <section class="project-section">
+                    <h2>Key Features</h2>
+                    <ul class="feature-list">
+                        <li><strong>Image Scanning:</strong>
+                            <ul>
+                                <li>Automated vulnerability scanning of container images</li>
+                                <li>Integration with popular registries (Docker Hub, ECR, GCR)</li>
+                                <li>Custom policy enforcement</li>
+                            </ul>
+                        </li>
+                        <li><strong>Secrets Detection:</strong>
+                            <ul>
+                                <li>Scans images and containers for hardcoded secrets</li>
+                                <li>Alerts and auto-remediation options</li>
+                                <li>Integration with secret management tools</li>
+                            </ul>
+                        </li>
+                        <li><strong>Runtime Monitoring:</strong>
+                            <ul>
+                                <li>Monitors container behavior for anomalies</li>
+                                <li>Real-time alerting and logging</li>
+                                <li>Integration with SIEM platforms</li>
+                            </ul>
+                        </li>
+                        <li><strong>CI/CD Integration:</strong>
+                            <ul>
+                                <li>Automated scans in build pipelines</li>
+                                <li>Fail builds on critical vulnerabilities</li>
+                                <li>Reporting and dashboard integration</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="project-section">
+                    <h2>Technical Implementation</h2>
+                    <div class="tech-stack">
+                        <div class="tech-category">
+                            <h3>Container Security</h3>
+                            <ul>
+                                <li>Python scripts for automation</li>
+                                <li>OpenSCAP, Trivy for image scanning</li>
+                                <li>Custom policy engine</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Kubernetes & Orchestration</h3>
+                            <ul>
+                                <li>Kubernetes for container orchestration</li>
+                                <li>Helm for deployment</li>
+                                <li>Prometheus & Grafana for monitoring</li>
+                            </ul>
+                        </div>
+                        <div class="tech-category">
+                            <h3>Integration</h3>
+                            <ul>
+                                <li>CI/CD tools (GitHub Actions, Jenkins)</li>
+                                <li>SIEM integration (Splunk, ELK)</li>
+                                <li>Secret management (Vault, AWS Secrets Manager)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="project-section">
+                    <h2>Results & Impact</h2>
+                    <ul class="impact-list">
+                        <li>Reduced container vulnerabilities by 50%</li>
+                        <li>Automated detection and remediation of secrets</li>
+                        <li>Improved compliance with industry standards</li>
+                        <li>Enhanced visibility into container security posture</li>
+                    </ul>
+                </section>
+
+                <section class="project-section">
+                    <h2>Future Enhancements</h2>
+                    <ul class="future-list">
+                        <li>AI-based anomaly detection</li>
+                        <li>Support for additional container runtimes</li>
+                        <li>Automated compliance mapping</li>
+                        <li>Advanced reporting and alerting features</li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <a href="../index.html#projects" class="btn">Back to Projects</a>
+            <div class="social-list">
+                <a href="https://www.linkedin.com/in/imran-khan23/" class="social-list__link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/ImranK1130" class="social-list__link">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>&copy; 2024 Imran Khan. All rights reserved.</p>
+        </footer>
+        
+        <script src="../js/index.js"></script>
+    </body>
+</html> 
