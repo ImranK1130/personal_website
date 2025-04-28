@@ -3,16 +3,18 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Imran Khan Portfolio</title>
+        <title>Imran Khan - Cybersecurity & Cloud Security Professional</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
+        <header class="header glass">
             <div class="logo">
-                <img src="img/logo-02.png" alt="Imran Khan Logo">
+                <img src="img/logo-02.png" alt="IK" class="logo__img">
             </div>
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
@@ -20,9 +22,10 @@
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
-                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
-                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#expertise" class="nav__link">Expertise</a></li>
+                    <li class="nav__item"><a href="#education" class="nav__link">Education</a></li>
+                    <li class="nav__item"><a href="#experience" class="nav__link">Experience</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Security Projects</a></li>
                     <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
@@ -31,110 +34,408 @@
 
         <!-- Introduction -->
         <section class="intro" id="home">
-            <h1 class="section__title section__title--intro">
-                Hi, I am <strong>Imran Khan</strong>
-            </h1>
-            <p class="section__subtitle section__subtitle--intro">Software Developer & Cybersecurity Aspirant</p>
-            <img src="img/imran-01.JPG" alt="A picture of Imran smiling" class="intro__img">
-        </section>
+            <div class="intro__content">
+                <div class="intro__name-block">
+                    <span class="intro__greeting">Hi there! I'm</span>
+                    <h1 class="intro__name">
+                        Imran<br>
+                        Khan
+                    </h1>
+                    <div class="terminal-lines">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">&gt;</span>
+                            <span class="terminal-text">Associate Cybersecurity</span>
+                        </div>
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">&gt;</span>
+                            <span class="terminal-text">Vulnerability Specialist</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <p class="intro__bio">Dedicated cybersecurity professional specializing in vulnerability management and cloud security. Experienced in conducting comprehensive security assessments, automating security processes, and implementing robust security controls across cloud environments.</p>
+                
+                <div class="stats-container">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="stat-number">150+</div>
+                        <div class="stat-label">Security Assessments</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <div class="stat-number">40%</div>
+                        <div class="stat-label">Risk Reduction</div>
+                    </div>
+                    
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="stat-number">3.91</div>
+                        <div class="stat-label">GPA</div>
+                    </div>
+                </div>
 
-        <!-- Skills -->
-        <section class="my-skills" id="skills">
-            <h2 class="section__title section__title--skills">My Skills</h2>
-            <div class="skills">
-                <div class="skill">
-                    <img src="img/c++-logo.png" alt="C++" class="skill1__img">
-                    <p>Proficient in C++ with experience in file management, data reading, and data structures. Developed several programs including a CSV file reader with search and sort functionality, and an array-based data sorting program using various algorithms.</p>
-                </div>
-                <div class="skill">
-                    <img src="img/C-logo.png" alt="C" class="skill2__img">
-                    <p>Proficient in C with experience in file management, data reading, and data structures. Developed interactive programs including a program to parse and process data from XML files, and a stack implementation using arrays.</p>
-                </div>
-                <div class="skill">
-                    <img src="img/python-logo.png" alt="Python" class="skill3__img">
-                    <p>Proficient in Python with experience in data analysis and machine learning. Developed programs including an interactive text-based game, and a machine learning model to classify text documents.</p>
+                <div class="intro__cta">
+                    <a href="#contact" class="btn">Get in Touch</a>
+                    <a href="resume/Imran_Khan_Resume.pdf" class="btn btn--outline" download>Download CV</a>
                 </div>
             </div>
-            <a href="#projects" class="btn">View Projects</a>
-        </section>
-
-        <!-- About Me -->
-
-        <section class="about-me" id="about">
-            <h2 class="section__title section__title--about">Who I Am</h2>
-            <p class="section__subtitle section__subtitle--about">Aspiring Cybersecurity & Software Engineering Professional</p>
-            <div class="about-me__body">
-                <p>Hello! I'm Imran Khan, a Computer Science student at the University of Illinois at Chicago, graduating in December 2024 with a GPA of 3.95/4.0. I am passionate about technology, particularly software engineering and cybersecurity.</p>
-                
-                <p>As an Associate Cybersecurity Vulnerability Intern at <strong>Blue Cross and Blue Shield of Illinois/Health Care Service Corporation (HCSC)</strong>, I conducted vulnerability assessments using <strong>DAST</strong>, <strong>SAST</strong>, <strong>MAST</strong>, and <strong>SCA</strong> tools, mitigating over 50 security gaps and reducing incidents by 20%. I also automated security tasks, cutting response times by 30%.</p>
-                
-                <p>At <strong>Millennium IT Solutions</strong>, I engaged in cybersecurity projects with <strong>AWS</strong> and <strong>Azure</strong>, reducing security breaches by 25% and enhancing efficiency by 40% through automation.</p>
-                
-                <p>My technical skills include <strong>C++</strong>, <strong>Python</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and cybersecurity tools like <strong>Checkmarx</strong>, <strong>GHAS</strong>, <strong>Tanium</strong>, <strong>Traceable</strong>, and <strong>Snyk</strong>. I hold certifications including <strong>Google Certified Cloud Digital Leader</strong>, <strong>AWS Certified Cloud Practitioner</strong>, <strong>Google Cybersecurity Professional Certificate</strong>, and <strong>Security+</strong>.</p>
-                
-                <p>My goal is to leverage my skills in developing secure, efficient, and impactful technological solutions, contributing positively to the industry and society.</p>
+            
+            <div class="intro__image">
+                <img src="img/imran-01.JPG" alt="Imran Khan">
             </div>
-            <img src="img/imran-02.PNG" alt="A picture of Imran smiling" class="about-me__img">
-            <a href="resume/Imran_Khan_Resume.pdf" download class="btn">Download Resume (PDF)</a>
         </section>
 
+        <!-- Expertise -->
+        <section class="expertise" id="expertise">
+            <h2 class="section__title" data-aos="fade-up">Security Expertise</h2>
+            <div class="expertise__grid" data-aos="fade-up">
+                <div class="expertise-card">
+                    <div class="expertise-icon-circle">
+                        <i class="fas fa-cloud-shield"></i>
+                    </div>
+                    <h3>Cloud Security</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-check"></i> AWS & Azure Security Architecture</li>
+                        <li><i class="fas fa-check"></i> Cloud Security Posture Management</li>
+                        <li><i class="fas fa-check"></i> IAM & Access Control</li>
+                        <li><i class="fas fa-check"></i> Cloud Network Security</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon-circle">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>DevSecOps</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-check"></i> Security Pipeline Integration</li>
+                        <li><i class="fas fa-check"></i> Container Security</li>
+                        <li><i class="fas fa-check"></i> Infrastructure as Code Security</li>
+                        <li><i class="fas fa-check"></i> Automated Security Testing</li>
+                    </ul>
+                </div>
+
+                <div class="expertise-card">
+                    <div class="expertise-icon-circle">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security Operations</h3>
+                    <ul class="expertise-list">
+                        <li><i class="fas fa-check"></i> SIEM Implementation</li>
+                        <li><i class="fas fa-check"></i> Incident Response</li>
+                        <li><i class="fas fa-check"></i> Threat Hunting</li>
+                        <li><i class="fas fa-check"></i> Security Monitoring</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education & Experience Timeline -->
+        <section class="timeline-section" id="education">
+            <h2 class="section__title" data-aos="fade-up">Education & Experience</h2>
+            <div class="timeline" data-aos="fade-up">
+                <!-- Current Role -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Associate Cybersecurity Vulnerability Specialist</h3>
+                        <span class="timeline-company">Blue Cross and Blue Shield of Illinois / HCSC</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">January 2025 – Present</span>
+                        <ul class="timeline-list">
+                            <li>Conducted over 150 Threat and Vulnerability Management (TVM) assessments across systems, APIs, databases, and cloud environments, identifying and mitigating security risks with a 95% resolution rate</li>
+                            <li>Automated vulnerability scanning and remediation using Python, reducing manual effort by 40% and improving incident response times by 30%, leading to a 25% decrease in security breaches</li>
+                            <li>Integrated security controls into CI/CD pipelines and enforced cloud security policies, increasing compliance with industry standards by 20% and reducing deployment vulnerabilities by 35%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Georgia Tech -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Georgia Institute of Technology</h3>
+                        <span class="timeline-degree">Master of Science in Cybersecurity</span>
+                        <span class="timeline-date">Expected May 2027</span>
+                    </div>
+                </div>
+
+                <!-- Software Engineer at Boosted Biz -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer</h3>
+                        <span class="timeline-company">Boosted Biz</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">February 2024 – January 2025</span>
+                        <ul class="timeline-list">
+                            <li>Designed and deployed advanced machine learning models for predictive analytics and customer behavior insights, leveraging Python and TensorFlow to drive data-driven business strategies</li>
+                            <li>Engineered a high-performance AI chatbot using NLP techniques in Python and JavaScript, boosting customer engagement by 25% and enhancing user satisfaction</li>
+                            <li>Architected scalable data pipelines for real-time data processing and cloud service integration, optimizing data flow and supporting complex machine learning applications</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Cybersecurity Intern at Millennium -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Cybersecurity Intern</h3>
+                        <span class="timeline-company">Millennium IT Solutions</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">February 2024 – June 2024</span>
+                        <ul class="timeline-list">
+                            <li>Contributed to cybersecurity projects with AWS and Azure, reducing security breaches by 25%</li>
+                            <li>Managed and supported IAM systems, ensuring secure and efficient access to network resources</li>
+                            <li>Automated support processes with Python and PowerShell, improving operational efficiency by 40%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Software Engineer Intern at Maxil -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern</h3>
+                        <span class="timeline-company">Maxil Technology</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">February 2024 – May 2024</span>
+                        <ul class="timeline-list">
+                            <li>Led full-stack development on enterprise-level projects using Java, AngularJS, and Postgres, improving system efficiency and performance</li>
+                            <li>Enhanced system performance by designing microservices with Java Spring Boot, optimizing data handling, and streamlining Agile workflows with Jira</li>
+                            <li>Automated CI/CD pipelines using Maven and Git in a GCP environment, increasing deployment frequency and improving code quality</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Associate Cybersecurity Vulnerability Intern -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Associate Cybersecurity Vulnerability Intern</h3>
+                        <span class="timeline-company">Blue Cross and Blue Shield of Illinois / HCSC</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">May 2024 – January 2025</span>
+                        <ul class="timeline-list">
+                            <li>Conducted vulnerability assessments using DAST, SAST, MAST, and SCA tools, mitigating over 50 security gaps and reducing security incidents by 20%</li>
+                            <li>Automated security tasks with CVE research, documentation, and scripting, cutting response times by 30%</li>
+                            <li>Developed comprehensive reports on vulnerabilities in databases, containers, APIs, and endpoints, improving security policy adherence by 15%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Software Engineer Intern at Boosted Biz -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern</h3>
+                        <span class="timeline-company">Boosted Biz</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">September 2023 – February 2024</span>
+                        <ul class="timeline-list">
+                            <li>Contributed to backend development using Python, JavaScript, and SQL for hosting, database management, and API integrations</li>
+                            <li>Developed an AI-powered chatbot using JavaScript, CSS, Angular, and Python, resulting in a 25% increase in customer engagement</li>
+                            <li>Proposed data-driven strategies for business growth, contributing to a 10% improvement in operational efficiency</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Software Engineer Intern at 66Degrees -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Engineer Intern</h3>
+                        <span class="timeline-company">66Degrees</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">June 2023 – August 2023</span>
+                        <ul class="timeline-list">
+                            <li>Developed and optimized Google Cloud Service APIs, increasing operational efficiency and accelerating project timelines</li>
+                            <li>Designed API service call patterns for front-end integration, enhancing cloud performance with Java and Python</li>
+                            <li>Contributed to Agile development, enhancing internal release pipelines and improving deployment efficiency by 15%</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Teaching Assistant -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Teaching Assistant</h3>
+                        <span class="timeline-company">UIC Computer Science</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">January 2023 – December 2024</span>
+                        <ul class="timeline-list">
+                            <li>Developing lesson plans to teach MATLAB, C++, and Python programming languages to 50+ students, enhancing their technical skills</li>
+                            <li>Conducting personalized office hours, addressing student challenges, and fostering problem-solving abilities</li>
+                            <li>Facilitating group discussions and providing actionable feedback on coding projects, improving students' technical leadership and teamwork skills</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Software Development Educator -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Software Development Educator</h3>
+                        <span class="timeline-company">University of Illinois Chicago</span>
+                        <span class="timeline-location">Chicago, IL</span>
+                        <span class="timeline-date">June 2022 – August 2022</span>
+                        <ul class="timeline-list">
+                            <li>Revamped programming curriculum, boosting student engagement and increasing assessment pass rates by 25%</li>
+                            <li>Analyzed student feedback to enhance course content, aligning with industry software standards using SQL and Python</li>
+                            <li>Guided hands-on projects, leading to an 80% completion rate and motivating 50% of students to pursue advanced programming studies</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- UIC -->
+                <div class="timeline-block">
+                    <div class="timeline-dot">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>University of Illinois at Chicago</h3>
+                        <span class="timeline-degree">Bachelor of Science in Computer Science</span>
+                        <span class="timeline-gpa">GPA: 3.91/4.0</span>
+                        <span class="timeline-date">Expected December 2024</span>
+                    </div>
+                </div>
+            </div>
+        </section>
 
         <!-- Projects -->
-        <section class="work" id="projects">
-            <h2 class="section-title section__title--projects">My Work</h2>
-            <p class="section-subtitle">A selection of my projects</p>
-            <div class="projects">
-                <div class="project">
-                    <h3>ClimaSphere: Dynamic Weather Companion | React.js, API Integration, Docker</h3>
-                    <p>Developed a robust and user-friendly web application delivering real-time weather updates. Utilized React.js, Node.js, and integrated Rapid API and OpenWeatherMap for current weather information, resulting in a 75% increase in user engagement.</p>
-                    <a href="project-1.html" class="btn">View Project</a>
+        <section class="projects" id="projects">
+            <h2 class="section__title" data-aos="fade-up">Security Projects</h2>
+            <div class="projects__grid" data-aos="fade-up">
+                <div class="project-card glow">
+                    <div class="project__content">
+                        <div class="project__icon">
+                            <i class="fas fa-shield-virus"></i>
+                        </div>
+                        <h3>Cloud Security Posture Manager</h3>
+                        <p class="project__tech">AWS | Azure | Security Automation</p>
+                        <p>Developed a comprehensive cloud security posture management platform that monitors and enforces security policies across multi-cloud environments.</p>
+                        <div class="project__stats">
+                            <span>45% Risk Reduction</span>
+                            <span>98% Compliance Rate</span>
+                        </div>
+                        <a href="projects/cloud-security.html" class="btn btn--project">View Details</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>File Encryption | C++</h3>
-                    <p>Implemented a file compression program using the Huffman algorithm to compress and decompress files efficiently. Developed key functions for building frequency maps, encoding trees, and encoding/decoding maps.</p>
-                    <a href="project-2.html" class="btn">View Project</a>
+
+                <div class="project-card glow">
+                    <div class="project__content">
+                        <div class="project__icon">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>AI-Powered Threat Detection</h3>
+                        <p class="project__tech">ML | Security Analytics | SIEM</p>
+                        <p>Built an AI-driven threat detection system that analyzes patterns and identifies potential security threats in real-time.</p>
+                        <div class="project__stats">
+                            <span>90% Detection Rate</span>
+                            <span>60% Faster Response</span>
+                        </div>
+                        <a href="projects/threat-detection.html" class="btn btn--project">View Details</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <h3>March Madness Analysis | C++</h3>
-                    <p>Analyzed tournament data to determine rankings and outcomes. Utilized data structures to store, manipulate, and analyze data, providing insights into game statistics and team performances.</p>
-                    <a href="project-3.html" class="btn">View Project</a>
+
+                <div class="project-card glow">
+                    <div class="project__content">
+                        <div class="project__icon">
+                            <i class="fas fa-code-branch"></i>
+                        </div>
+                        <h3>DevSecOps Pipeline Framework</h3>
+                        <p class="project__tech">Jenkins | Docker | Security Tools</p>
+                        <p>Created a comprehensive DevSecOps pipeline framework integrating security testing, vulnerability scanning, and compliance checks.</p>
+                        <div class="project__stats">
+                            <span>95% Security Coverage</span>
+                            <span>40% Faster Deployment</span>
+                        </div>
+                        <a href="projects/devsecops.html" class="btn btn--project">View Details</a>
+                    </div>
                 </div>
             </div>
         </section>
 
         <!-- Certifications -->
         <section class="certifications" id="certifications">
-            <h2 class="section__title section__title--certifications">Certifications</h2>
-            <ul class="certifications__list">
-                <li>Google Certified Cloud Digital Leader - August 2023</li>
-                <li>AWS Certified Cloud Practitioner - January 2024</li>
-                <li>Google Cybersecurity Professional Certificate - February 2024</li>
-                <li>Security+ - August 2024</li>
-            </ul>
+            <h2 class="section__title" data-aos="fade-up">Security Certifications</h2>
+            <div class="certifications__grid" data-aos="fade-up">
+                <div class="certification-card glow">
+                    <img src="img/securityplus-logo.png" alt="Security+ Logo" class="certification__logo">
+                    <h3>CompTIA Security+</h3>
+                    <p>Advanced Security Operations</p>
+                    <span class="certification-date">February 2025</span>
+                </div>
+
+                <div class="certification-card glow">
+                    <img src="img/google-cloud-logo.png" alt="Google Cloud Logo" class="certification__logo">
+                    <h3>Google Cloud Digital Leader</h3>
+                    <p>Cloud Architecture</p>
+                    <span class="certification-date">March 2024</span>
+                </div>
+
+                <div class="certification-card glow">
+                    <img src="img/aws-logo.png" alt="AWS Logo" class="certification__logo">
+                    <h3>AWS Certified Cloud Practitioner</h3>
+                    <p>Cloud Fundamentals</p>
+                    <span class="certification-date">January 2024</span>
+                </div>
+
+                <div class="certification-card glow">
+                    <img src="img/google-cyber-logo.png" alt="Google Cybersecurity Logo" class="certification__logo">
+                    <h3>Google Cybersecurity Professional</h3>
+                    <p>Enterprise Security</p>
+                    <span class="certification-date">February 2024</span>
+                </div>
+            </div>
         </section>
 
         <!-- Contact -->
         <section class="contact" id="contact">
-            <h2 class="section__title section__title--contact">Contact Me</h2>
-            <p class="section__subtitle section__subtitle--contact">Let's get in touch</p>
-            <a href="mailto:ikhan001130@gmail.com" class="btn">Email Me</a>
-            <ul class="social-list">
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.instagram.com/imran._._.khan/">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://www.linkedin.com/in/imran-khan23/">
+            <h2 class="section__title" data-aos="fade-up">Get in Touch</h2>
+            <div class="contact__content" data-aos="fade-up">
+                <div class="contact__info">
+                    <p><i class="fas fa-phone"></i> 773-961-6499</p>
+                    <p><i class="fas fa-envelope"></i> ikhan113000@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> imrankhn.com</p>
+                </div>
+                <div class="contact__social">
+                    <a href="https://www.linkedin.com/in/imran-khan23" target="_blank" class="social-list__link">
                         <i class="fab fa-linkedin"></i>
                     </a>
-                </li>
-                <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com/ImranK1130">
+                    <a href="https://github.com/ImranK1130" target="_blank" class="social-list__link">
                         <i class="fab fa-github"></i>
                     </a>
-                </li>
-            </ul>
+                </div>
+            </div>
         </section>
 
         <!-- Footer -->
@@ -142,6 +443,23 @@
             <p>&copy; 2024 Imran Khan. All rights reserved.</p>
         </footer>
         
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 800,
+                offset: 100,
+                once: true
+            });
+
+            window.addEventListener('scroll', () => {
+                const header = document.querySelector('.header');
+                if (window.scrollY > 50) {
+                    header.classList.add('glass');
+                } else {
+                    header.classList.remove('glass');
+                }
+            });
+        </script>
         <script src="js/index.js"></script>
     </body>
 </html>

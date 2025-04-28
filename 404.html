@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>404 - Page Not Found | Imran Khan</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap">
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .error-page {
+                min-height: 100vh;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 2rem;
+                background: var(--clr-dark);
+                font-family: var(--ff-mono);
+            }
+
+            .error-code {
+                font-size: 8rem;
+                color: var(--clr-primary);
+                margin: 0;
+                line-height: 1;
+                position: relative;
+                text-shadow: 0 0 10px var(--clr-primary);
+            }
+
+            .error-code::after {
+                content: "ACCESS DENIED";
+                position: absolute;
+                top: -1.5rem;
+                left: 50%;
+                transform: translateX(-50%);
+                font-size: 1rem;
+                color: var(--clr-accent);
+                letter-spacing: 0.5em;
+                text-shadow: none;
+            }
+
+            .error-message {
+                font-size: 1.5rem;
+                color: var(--clr-light);
+                margin: 2rem 0;
+                max-width: 600px;
+            }
+
+            .error-details {
+                font-family: var(--ff-mono);
+                color: var(--clr-gray);
+                background: rgba(255, 255, 255, 0.05);
+                padding: 1rem;
+                border-radius: var(--radius-lg);
+                margin: 2rem 0;
+                text-align: left;
+            }
+
+            .error-details code {
+                color: var(--clr-primary);
+            }
+
+            .error-actions {
+                margin-top: 2rem;
+            }
+
+            .error-actions .btn {
+                margin: 0.5rem;
+            }
+
+            .terminal-cursor {
+                display: inline-block;
+                width: 10px;
+                height: 1.2em;
+                background: var(--clr-primary);
+                margin-left: 5px;
+                animation: blink 1s step-end infinite;
+            }
+
+            @keyframes blink {
+                50% { opacity: 0; }
+            }
+
+            @media (max-width: 768px) {
+                .error-code {
+                    font-size: 6rem;
+                }
+                
+                .error-message {
+                    font-size: 1.2rem;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="error-page">
+            <h1 class="error-code">404</h1>
+            <p class="error-message">SECURITY ALERT: The requested resource could not be found on this server.</p>
+            
+            <div class="error-details">
+                <p>> Initiating security scan...</p>
+                <p>> Checking access permissions...</p>
+                <p>> Error: <code>PAGE_NOT_FOUND</code></p>
+                <p>> Suggested action: Return to secure zone<span class="terminal-cursor"></span></p>
+            </div>
+
+            <div class="error-actions">
+                <a href="/" class="btn btn--primary">Return to Homepage</a>
+                <a href="/#contact" class="btn btn--secondary">Report Issue</a>
+            </div>
+        </div>
+
+        <script>
+            // Simulate typing effect
+            const details = document.querySelector('.error-details');
+            const lines = details.querySelectorAll('p');
+            
+            lines.forEach((line, index) => {
+                line.style.opacity = '0';
+                setTimeout(() => {
+                    line.style.opacity = '1';
+                    line.style.transition = 'opacity 0.3s ease';
+                }, index * 500);
+            });
+        </script>
+    </body>
+</html> 
