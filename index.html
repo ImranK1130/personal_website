@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Imran Khan Portfolio</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/logo-02.png" alt="Imran Khan Logo">
+            </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                    <li class="nav__item"><a href="#projects" class="nav__link">Projects</a></li>
+                    <li class="nav__item"><a href="#certifications" class="nav__link">Certifications</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Introduction -->
+        <section class="intro" id="home">
+            <h1 class="section__title section__title--intro">
+                Hi, I am <strong>Imran Khan</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Software Developer & Cybersecurity Aspirant</p>
+            <img src="img/imran-01.JPG" alt="A picture of Imran smiling" class="intro__img">
+        </section>
+
+        <!-- Skills -->
+        <section class="my-skills" id="skills">
+            <h2 class="section__title section__title--skills">My Skills</h2>
+            <div class="skills">
+                <div class="skill">
+                    <img src="img/c++-logo.png" alt="C++" class="skill1__img">
+                    <p>Proficient in C++ with experience in file management, data reading, and data structures. Developed several programs including a CSV file reader with search and sort functionality, and an array-based data sorting program using various algorithms.</p>
+                </div>
+                <div class="skill">
+                    <img src="img/C-logo.png" alt="C" class="skill2__img">
+                    <p>Proficient in C with experience in file management, data reading, and data structures. Developed interactive programs including a program to parse and process data from XML files, and a stack implementation using arrays.</p>
+                </div>
+                <div class="skill">
+                    <img src="img/python-logo.png" alt="Python" class="skill3__img">
+                    <p>Proficient in Python with experience in data analysis and machine learning. Developed programs including an interactive text-based game, and a machine learning model to classify text documents.</p>
+                </div>
+            </div>
+            <a href="#projects" class="btn">View Projects</a>
+        </section>
+
+        <!-- About Me -->
+
+        <section class="about-me" id="about">
+            <h2 class="section__title section__title--about">Who I Am</h2>
+            <p class="section__subtitle section__subtitle--about">Aspiring Cybersecurity & Software Engineering Professional</p>
+            <div class="about-me__body">
+                <p>Hello! I'm Imran Khan, a Computer Science student at the University of Illinois at Chicago, graduating in December 2024 with a GPA of 3.95/4.0. I am passionate about technology, particularly software engineering and cybersecurity.</p>
+                
+                <p>As an Associate Cybersecurity Vulnerability Intern at <strong>Blue Cross and Blue Shield of Illinois/Health Care Service Corporation (HCSC)</strong>, I conducted vulnerability assessments using <strong>DAST</strong>, <strong>SAST</strong>, <strong>MAST</strong>, and <strong>SCA</strong> tools, mitigating over 50 security gaps and reducing incidents by 20%. I also automated security tasks, cutting response times by 30%.</p>
+                
+                <p>At <strong>Millennium IT Solutions</strong>, I engaged in cybersecurity projects with <strong>AWS</strong> and <strong>Azure</strong>, reducing security breaches by 25% and enhancing efficiency by 40% through automation.</p>
+                
+                <p>My technical skills include <strong>C++</strong>, <strong>Python</strong>, <strong>Java</strong>, <strong>JavaScript</strong>, <strong>React</strong>, <strong>Node.js</strong>, and cybersecurity tools like <strong>Checkmarx</strong>, <strong>GHAS</strong>, <strong>Tanium</strong>, <strong>Traceable</strong>, and <strong>Snyk</strong>. I hold certifications including <strong>Google Certified Cloud Digital Leader</strong>, <strong>AWS Certified Cloud Practitioner</strong>, <strong>Google Cybersecurity Professional Certificate</strong>, and <strong>Security+</strong>.</p>
+                
+                <p>My goal is to leverage my skills in developing secure, efficient, and impactful technological solutions, contributing positively to the industry and society.</p>
+            </div>
+            <img src="img/imran-02.PNG" alt="A picture of Imran smiling" class="about-me__img">
+            <a href="resume/Imran_Khan_Resume.pdf" download class="btn">Download Resume (PDF)</a>
+        </section>
+
+
+        <!-- Projects -->
+        <section class="work" id="projects">
+            <h2 class="section-title section__title--projects">My Work</h2>
+            <p class="section-subtitle">A selection of my projects</p>
+            <div class="projects">
+                <div class="project">
+                    <h3>ClimaSphere: Dynamic Weather Companion | React.js, API Integration, Docker</h3>
+                    <p>Developed a robust and user-friendly web application delivering real-time weather updates. Utilized React.js, Node.js, and integrated Rapid API and OpenWeatherMap for current weather information, resulting in a 75% increase in user engagement.</p>
+                    <a href="project-1.html" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>File Encryption | C++</h3>
+                    <p>Implemented a file compression program using the Huffman algorithm to compress and decompress files efficiently. Developed key functions for building frequency maps, encoding trees, and encoding/decoding maps.</p>
+                    <a href="project-2.html" class="btn">View Project</a>
+                </div>
+                <div class="project">
+                    <h3>March Madness Analysis | C++</h3>
+                    <p>Analyzed tournament data to determine rankings and outcomes. Utilized data structures to store, manipulate, and analyze data, providing insights into game statistics and team performances.</p>
+                    <a href="project-3.html" class="btn">View Project</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications -->
+        <section class="certifications" id="certifications">
+            <h2 class="section__title section__title--certifications">Certifications</h2>
+            <ul class="certifications__list">
+                <li>Google Certified Cloud Digital Leader - August 2023</li>
+                <li>AWS Certified Cloud Practitioner - January 2024</li>
+                <li>Google Cybersecurity Professional Certificate - February 2024</li>
+                <li>Security+ - August 2024</li>
+            </ul>
+        </section>
+
+        <!-- Contact -->
+        <section class="contact" id="contact">
+            <h2 class="section__title section__title--contact">Contact Me</h2>
+            <p class="section__subtitle section__subtitle--contact">Let's get in touch</p>
+            <a href="mailto:ikhan001130@gmail.com" class="btn">Email Me</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.instagram.com/imran._._.khan/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://www.linkedin.com/in/imran-khan23/">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/ImranK1130">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <p>&copy; 2024 Imran Khan. All rights reserved.</p>
+        </footer>
+        
+        <script src="js/index.js"></script>
+    </body>
+</html>
